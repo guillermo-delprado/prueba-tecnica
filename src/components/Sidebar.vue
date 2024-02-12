@@ -2,6 +2,10 @@
     <aside>
 
         <div class="menu">
+            <div class="logo">
+                <img :src="logoURL" alt="Vue" class="logo-image" />
+            </div>
+
             <router-link to="/" class="button router-link-active">
 
                 <span class="material-symbols-outlined material-icons">team_dashboard</span>
@@ -26,21 +30,17 @@
         <div class="flex"></div>
 
         <div class="menu">
-            <router-link to="/settings" class="button">
-
-                <span class="text">Agregar widget</span>
-                <span class="material-symbols-outlined material-icons">add</span>
-
-            </router-link>
+            <BotonAgregarWidget />
+            <Usuario />
         </div>
     </aside>
 </template>
   
 <script setup>
-// Importa las dependencias necesarias
 import { ref } from 'vue'
-
-  // Puedes eliminar la lógica relacionada con la expansión y contracción del sidebar
+import logoURL from '../assets/logo.png'
+import BotonAgregarWidget from './BotonAgregarWidget.vue'
+import Usuario from './Usuario.vue'
 
 </script>
   
@@ -60,12 +60,14 @@ aside {
         flex: 1 1 0%;
     }
 
-
-
     .material-icons {
-        font-size: 2rem;
+        font-size: 1.35rem;
         color: var(--light);
         padding: 0 5px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 1rem;
     }
 
     &:hover {
@@ -73,9 +75,6 @@ aside {
             color: var(--primary);
         }
     }
-
-
-
 
 
     h3,
@@ -94,18 +93,21 @@ aside {
     .menu {
         margin: 0 -1rem;
 
-
         .button {
 
             display: flex;
             align-items: center;
-            /* Agregado para centrar contenido horizontalmente */
+            border-radius: 8px;
+            /* Desenfoque en la parte inferior */
+
             text-decoration: none;
-            padding: 1rem 5rem;
+            margin: 1.8rem 4.5rem;
+            font-size: 1.2rem;
+            padding: .8rem .5rem;
 
 
             .material-icons {
-                font-size: 2rem;
+                font-size: 1.4rem;
                 color: var(--light);
             }
 
@@ -114,14 +116,18 @@ aside {
             }
 
             &:hover {
+                background: var(--button);
+                box-shadow: 0 5px 5px #875630;
 
                 .material-icons,
                 .text {}
             }
 
+
             &.router-link-exact-active {
                 // Cambia al color naranja cuando se hace clic
-
+                background: var(--button);
+                box-shadow: 0 3px 5px #875630;
 
                 .material-icons,
                 .text {}
@@ -133,6 +139,16 @@ aside {
         position: absolute;
         z-index: 99;
     }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 300px;
+    height: 100px;
 }
 </style>
   

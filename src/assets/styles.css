@@ -1,0 +1,107 @@
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark);
+    color: var(--light);
+    width: calc(300px);
+    min-height: 100vh;
+    padding: 1rem;
+    transition: 0.2s ease-in-out;
+
+
+    .flex {
+        flex: 1 1 0%;
+    }
+
+
+
+    .material-icons {
+        font-size: 1.35rem;
+        color: var(--light);
+        padding: 0 10px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 1rem;
+    }
+
+
+
+
+    h3,
+    .button .text,
+    .footer p {
+        opacity: 1;
+    }
+
+    h3 {
+        color: var(--grey);
+
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+    }
+
+    .menu {
+        margin: 0 -1rem;
+
+
+        .button {
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 1.8rem 5.7rem;
+            font-size: 0.85rem;
+            padding: .8rem .5rem;
+            padding: .5rem 0rem .5rem 1rem;
+
+
+            .material-icons {
+                font-size: 1.40rem;
+                color: #b86b2c;
+            }
+
+            .text {
+                color: #b86b2c;
+            }
+
+
+        }
+
+        @media (max-width: 1024px) {
+            position: absolute;
+            z-index: 99;
+        }
+    }
+
+    .custom-button {
+        font-size: 5px;
+        padding: 10px 20px;
+        color: #b86b2c;
+        border: 2px solid #b86b2c;
+        background-color: transparent;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .custom-button:hover {
+
+        color: #fff;
+    }
+
+    .email {
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        border-radius: 8px;
+        color: #b5b8ba;
+        text-decoration: none;
+        margin: 1.5rem 3rem;
+        font-size: 1rem;
+        padding: .8rem .5rem;
+        padding: .5rem 5rem .6rem 2.5rem;
+    }
+}
