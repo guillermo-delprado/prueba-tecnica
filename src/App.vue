@@ -8,6 +8,8 @@
 
 <script setup>
 import Sidebar from './components/Sidebar.vue'
+import Tabla from './components/Tabla.vue';
+import Opciones from './components/Opciones.vue';
 </script>
 
 <style lang="scss">
