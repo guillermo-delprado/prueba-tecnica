@@ -12,13 +12,13 @@
                 <span class="text">Dashboard</span>
 
             </router-link>
-            <router-link to="/about" class="button">
+            <router-link to="/a" class="button">
                 <span class="material-symbols-outlined material-icons">
                     article
                 </span>
                 <span class="text">Bitacora</span>
             </router-link>
-            <router-link to="/team" class="button">
+            <router-link to="/a" class="button">
                 <span class="material-symbols-outlined material-icons">
                     settings_panorama
                 </span>
@@ -88,6 +88,8 @@ aside {
         font-size: 0.875rem;
         margin-bottom: 0.5rem;
         text-transform: uppercase;
+        display: flex;
+        align-items: start;
     }
 
     .menu {
