@@ -48,7 +48,8 @@ body {
 
 .cabecera h5 {
     color: #e98724;
-    padding: 5px;
+    padding: 15px;
+    font-size: 1rem;
 }
 
 .cerrar-btn {

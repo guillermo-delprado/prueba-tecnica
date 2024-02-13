@@ -100,13 +100,10 @@ aside {
             display: flex;
             align-items: center;
             border-radius: 8px;
-            /* Desenfoque en la parte inferior */
-
             text-decoration: none;
             margin: 1.8rem 4.5rem;
             font-size: 1.2rem;
             padding: .8rem .5rem;
-
 
             .material-icons {
                 font-size: 1.4rem;
@@ -127,7 +124,6 @@ aside {
 
 
             &.router-link-exact-active {
-                // Cambia al color naranja cuando se hace clic
                 background: var(--button);
                 box-shadow: 0 3px 5px #875630;
 

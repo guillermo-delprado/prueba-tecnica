@@ -63,8 +63,6 @@ a {
 
 .timer-container {
     width: 100px;
-    /* Ajusta el ancho según tus necesidades */
-    /* Puedes ajustar otros estilos según sea necesario */
 }
 
 .progress-bar-container {
@@ -77,11 +75,6 @@ a {
     text-align: center;
     box-sizing: border-box;
     margin: 20px 0px 0 15px;
-
-
-
-
-
 }
 
 

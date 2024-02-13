@@ -12,8 +12,6 @@ import { ref } from 'vue'
 </script>
 
 <style scoped>
-/* ... (Estilos anteriores) ... */
-
 .nuevo-boton {
     text-align: center;
     margin-top: 20px;
@@ -46,9 +44,7 @@ import { ref } from 'vue'
 
 .button-text {
     text-align: center;
-    /* Centra el texto horizontalmente */
     display: inline-block;
-    /* Permite centrar el texto horizontalmente */
 }
 
 .naranja-button:hover {

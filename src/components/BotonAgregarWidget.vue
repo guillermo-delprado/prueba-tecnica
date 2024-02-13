@@ -1,5 +1,3 @@
-
-
 <template>
     <div class="menu">
         <router-link to="/" class="custom-button button">
